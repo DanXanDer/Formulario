@@ -1,0 +1,208 @@
+@font-face {
+    font-family: Norse-bold;
+    src: url(Norse-Bold.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: overlay;
+}
+.content{
+    display: flex;
+}
+.image-container {
+    position: relative;
+    width: 40vw;
+    height: 47.1rem;
+    background-color: black;
+    display: flex;
+}
+
+.image-container>.back-img {
+    width: 40vw;
+    height: 47.1rem;
+}
+
+.image-container>.logo-background {
+    position: absolute;
+    background-color: black;
+    opacity: 0.4;
+    width: 40vw;
+    height: 10rem;
+    top: 30vh;
+}
+
+.image-container>.odin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40vw;
+    top: 33vh;
+}
+
+.image-container>.odin-logo>img {
+    height: 8rem;
+    width: 8vw;
+}
+.image-container>.odin-logo>div {
+    color: white;
+    font-family: Norse-bold;
+    font-size: 4rem;
+}
+.form-section{
+    width: 60vw;
+    background-color: beige;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    
+}
+
+span.cursive{
+    font-style: italic;
+}
+.form-section > .form-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 30px;
+    
+}
+
+form > .input-container > div > .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+form > .input-container > div > div.inputs > div > input{
+    width: 17vw;
+    height: 1.3rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #E5E7EB;
+}
+
+form > .input-container > div > div.inputs > div{
+    flex-direction: column;
+    display: flex;
+}
+form > .input-container > div > div.inputs > div > label{
+    font-size: 0.8rem;
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+    letter-spacing: 0.09rem;
+}
+.input-container > div > p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    
+}
+form section:first-child{
+   background-color: white;
+   border-style: outset;
+}
+form > .input-container > div{
+    padding: 30px;
+}
+section.button{
+    padding-left: 30px;
+}
+button{
+    padding: 10px 35px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+    margin-top: 30px;
+}
+div.login{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.login span{
+    color: #596D48;
+}
+.login span:hover{
+    cursor: pointer;
+}
+form > .input-container > div > div.inputs > div > input:valid:focus{
+    outline: none !important;
+    border-color: blue;
+}
+form > .input-container > div > div.inputs > div > input:invalid:focus{
+    outline: none !important;
+    border-color: red;
+}
+
+form > .input-container > div > div.inputs > div > input:invalid + span.email::after{
+    content: "Email invalido";
+    color: red;
+}
+
+form > .input-container > div > div.inputs > div > input:invalid + span.phone::after{
+    content: "Número inválido";
+    color: red;
+}
+@media(width<=870px) {
+    .content {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .image-container {
+        display: flex;
+        position: relative;
+        width: 100vw;
+        height: 35vh;
+    }
+
+    .image-container>.back-img {
+        width: 100vw;
+        height: 18rem;
+    }
+
+    .image-container>.logo-background {
+        position: absolute;
+        background-color: black;
+        width: 100vw;
+        height: 8rem;
+        top: 5vh;
+    }
+    .image-container>.odin-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        top: 6vh;
+    }
+    .image-container>.odin-logo>img {
+        height: 7rem;
+        width: 13vw;
+    }
+    .form-section{
+        position: absolute;
+        top: 18rem;
+        width: 100vw;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+    }
+    .form-section > .form-text{
+        padding-right: 30px;
+    }
+    form > .input-container > div > div.inputs > div > input{
+        width: 10rem;
+         
+    }
+}
+

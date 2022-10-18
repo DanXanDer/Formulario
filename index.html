@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="image-container">
+            <img src="background-img.jpg" alt="" class="back-img">
+            <div class="logo-background"></div>
+            <div class="odin-logo">
+                <img src="odin-lined.png" alt="">
+                <div class="odin-text">ODIN</div>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-text">
+                <p>
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <span class="cursive">now</span> to get started.
+                </p>
+                <p>You <span class="cursive">know</span> you want to.</p>
+            </div>
+            <div>
+                <form>
+                    <section class="input-container">
+                        <div>
+                            <p>Let's do this!</p>
+                            <div class="inputs">
+                                <div class="first-name">
+                                    <label for="fname">FIRST NAME</label>
+                                    <input type="text" name="fname">
+                                    <span></span>
+                                </div>
+                                <div class="last-name">
+                                    <label for="lname">LAST NAME</label>
+                                    <input type="text" name="lname">
+                                    <span></span>
+                                </div>
+                                <div class="email">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" name="email">
+                                    <span class="email"></span>
+                                </div>
+                                <div class="phone-number">
+                                    <label for="phone">PHONE NUMBER</label>
+                                    <input type="tel" name="phone" pattern="^[0-9]+">
+                                    <span class="phone"></span>
+                                </div>
+                                <div class="password">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" name="password" class="password" value="">
+                                </div>
+                                <div class="confirm-password">
+                                    <label for="con-password">CONFIRM PASSWORD</label>
+                                    <input type="password" name="con-password" class="con-password" value="">
+                                    <span class="con-pass" style="display: none">Las claves no coinciden!</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section class="button">
+                        <button type="submit">Create Account</button>
+                    </section>
+                </form>
+            </div>
+            <div class="login">
+                Already have an account? <span>Log in</span>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
